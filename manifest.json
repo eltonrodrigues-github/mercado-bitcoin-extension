@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
     "name": "Mercado Bitcoin",
-    "version": "0.0.0.1",
-    "description": "Extensão para o site do Mercado Bitcoin",
+    "version": "0.0.0.2",
+    "description": "Extensão para o site do Mercado Bitcoin, esta extensão adiciona um campo de valor em reais para facilitar a ordem de compra",
     "author": "Elton Rodrigues",
  
     "icons": { 
