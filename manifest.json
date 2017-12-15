@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "Mercado Bitcoin",
+    "version": "0.0.0.1",
+    "description": "Extensão para o site do Mercado Bitcoin",
+    "author": "Elton Rodrigues",
+ 
+    "icons": { 
+        "16": "mb-logo-mini-only.png",
+        "48": "mb-logo-mini-only.png",
+       "128": "mb-logo-mini-only.png" 
+    },
+
+    "page_action": {
+        "default_icon": "mb-logo-mini-only.png",
+        "default_title": "Mercado Bitcoin"
+    },
+ 
+    "content_scripts": [ 
+        {
+            "matches": [ "https://*.mercadobitcoin.com.br/BRLLTC/trade/ordens/*" ],
+            "js": ["util.js", "litecoin.js"]
+        },
+        {
+            "matches": [ "https://*.mercadobitcoin.com.br/BRLBTC/trade/ordens/*" ],
+            "js": ["util.js", "bitcoin.js"]
+        },
+        {
+            "matches": [ "https://*.mercadobitcoin.com.br/BRLBCH/trade/ordens/*" ],
+            "js": ["util.js", "bitcoin-cash.js"]
+        }  
+    ]
+}
